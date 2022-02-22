@@ -5,10 +5,9 @@ const images = [
 ]
 
 const chosenImage = images[Math.floor(Math.random() * images.length)]
-
 const bgImage = document.createElement("img")
-bgImage.classList.add("bgImg")
-bgImage.src = `img/${chosenImage}`
 
+bgImage.classList.add("bgImg")
+bgImage.src = `${chosenImage}`
 
 document.body.appendChild(bgImage)
