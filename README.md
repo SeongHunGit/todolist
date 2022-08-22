@@ -45,5 +45,5 @@
 - 해결 방안을 좁히기 위해 어떤 변화 이후에 문제가 발생하였는지 생각해 보았습니다.
 - 첫 번째로는 `scss` 파일 생성이었고, 두 번째는 `parcle-bundler` 설치였습니다.
 - 제일 쉬운 `scss` 파일 연결 방식, 연결 코드들을 확인해 보았으나 이상이 없어 보였습니다.
-- `parcle-bundler` 문제로 추측되어 한참 찾아보다 `index.html`이 변환돼서  `dist` 폴더로 삽입된다는 것을 알게 되었고 이때 `JavaScript` 파일 뿐만 아니라 `img` 파일도 앞에 기호들이 붙게 되는데 여기서 문제가 발생했던 겁니다. 즉, 파일이 `img.go3fg0z.jpg` 로 바뀌었는데 `img.jpg` 로 불러오려 했으니 출력이 안되었죠.
+- `parcle-bundler` 문제로 추측되어 한참 찾아보다 `index.html`이 변환돼서  `dist` 폴더로 삽입된다는 것을 알게 되었고 이때 `JavaScript` 파일 뿐만 아니라 `img` 파일도 앞에 기호들이 붙게 되는데 여기서 문제가 발생했던 겁니다. 즉, 파일이 `img.go3fg0z.jpg` 로 바뀌었는데 `img.jpg` 로 불러오려 했으니 출력이 안되었습니다.
 - `parcel plugin static files copy`를 통해 정적 파일 연결 패키지를 설치해 주고 `package.json` 파일에 `staticFiles`를 추가해주어 정적 파일 연결이 되었고 그 결과로 `background image`가 정상적으로 출력 되었습니다!🎉
